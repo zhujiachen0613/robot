@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="装配体123456">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0929824772796388 0.132416934830237 0.0994237041664709"
+        rpy="0 0 0" />
+      <mass
+        value="2.0227814568609" />
+      <inertia
+        ixx="0.00342301359659103"
+        ixy="-2.85193990350319E-19"
+        ixz="-5.72231661845712E-19"
+        iyy="0.00842182305506321"
+        iyz="-1.243799898626E-19"
+        izz="0.00834408658796838" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体123456/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体123456/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link11">
+    <inertial>
+      <origin
+        xyz="0.022735 0.01342 -0.022566"
+        rpy="0 0 0" />
+      <mass
+        value="0.022388" />
+      <inertia
+        ixx="8.0701E-06"
+        ixy="-1.336E-07"
+        ixz="6.6565E-08"
+        iyy="1.5638E-05"
+        iyz="8.026E-09"
+        izz="9.8124E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体123456/meshes/link11.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体123456/meshes/link11.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0.05545 -0.26912 0.10967"
+      rpy="3.1416 0 1.1959" />
+    <parent
+      link="base_link" />
+    <child
+      link="link11" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="q1">
+    <inertial>
+      <origin
+        xyz="-0.049713 0.0089553 -0.029857"
+        rpy="0 0 0" />
+      <mass
+        value="0.036098" />
+      <inertia
+        ixx="6.2975E-06"
+        ixy="-1.2668E-10"
+        ixz="-1.2283E-21"
+        iyy="1.2296E-05"
+        iyz="-6.2585E-22"
+        izz="7.9304E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体123456/meshes/q1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体123456/meshes/q1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="0"
+    type="fixed">
+    <origin
+      xyz="-0.019792 0.042 0.0072325"
+      rpy="0 0 -3.1416" />
+    <parent
+      link="link11" />
+    <child
+      link="q1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link22">
+    <inertial>
+      <origin
+        xyz="0.0227348235433388 0.0134201558793774 -0.0225656345104885"
+        rpy="0 0 0" />
+      <mass
+        value="0.0223876958999854" />
+      <inertia
+        ixx="8.07010464456517E-06"
+        ixy="-1.33597150798119E-07"
+        ixz="6.65648618840538E-08"
+        iyy="1.56381969037816E-05"
+        iyz="8.02600150685661E-09"
+        izz="9.81236899765543E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体123456/meshes/link22.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体123456/meshes/link22.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="-0.085 0 0.00025"
+      rpy="0 0 0" />
+    <parent
+      link="link11" />
+    <child
+      link="link22" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="q2">
+    <inertial>
+      <origin
+        xyz="-0.0497134368143054 0.00895534842083825 -0.0298574943306804"
+        rpy="0 0 0" />
+      <mass
+        value="0.0360983706758384" />
+      <inertia
+        ixx="6.29746195864372E-06"
+        ixy="-1.26676470508592E-10"
+        ixz="2.58866381147111E-22"
+        iyy="1.22959077376187E-05"
+        iyz="1.28797575273635E-21"
+        izz="7.93042079351711E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体123456/meshes/q2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体123456/meshes/q2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="0"
+    type="fixed">
+    <origin
+      xyz="-0.0197920275820724 0.041999999999987 0.0072324943306806"
+      rpy="0 0 3.14159265358979" />
+    <parent
+      link="link22" />
+    <child
+      link="q2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link33">
+    <inertial>
+      <origin
+        xyz="0.0227348235433388 0.0134201558793772 -0.0225656345104887"
+        rpy="0 0 0" />
+      <mass
+        value="0.0223876958999854" />
+      <inertia
+        ixx="8.07010464456518E-06"
+        ixy="-1.33597150798119E-07"
+        ixz="6.65648618840536E-08"
+        iyy="1.56381969037816E-05"
+        iyz="8.02600150679975E-09"
+        izz="9.81236899765545E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体123456/meshes/link33.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体123456/meshes/link33.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="-0.085 0 0.00025"
+      rpy="0 0 0" />
+    <parent
+      link="link22" />
+    <child
+      link="link33" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="q3">
+    <inertial>
+      <origin
+        xyz="-0.0497134368142956 0.00895534842085119 -0.0298574943306803"
+        rpy="0 0 0" />
+      <mass
+        value="0.0360983706758384" />
+      <inertia
+        ixx="6.29746195864373E-06"
+        ixy="-1.26676470502451E-10"
+        ixz="2.31517534298367E-21"
+        iyy="1.22959077376187E-05"
+        iyz="-6.32955713172865E-22"
+        izz="7.9304207935171E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体123456/meshes/q3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体123456/meshes/q3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="0"
+    type="fixed">
+    <origin
+      xyz="-0.0197920275820626 0.042 0.00723249433068028"
+      rpy="0 0 3.14159265358979" />
+    <parent
+      link="link33" />
+    <child
+      link="q3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link44">
+    <inertial>
+      <origin
+        xyz="0.035461479313839 0.0141129848597041 -0.0225976545807054"
+        rpy="0 0 0" />
+      <mass
+        value="0.0150469691309219" />
+      <inertia
+        ixx="6.86014906468923E-06"
+        ixy="-1.33597150798132E-07"
+        ixz="6.65648618840604E-08"
+        iyy="1.38357805482882E-05"
+        iyz="8.02600150677876E-09"
+        izz="9.20049416998934E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体123456/meshes/link44.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体123456/meshes/link44.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="-0.085424 0.002904 0.00025"
+      rpy="0 0 -0.040209" />
+    <parent
+      link="link33" />
+    <child
+      link="link44" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="q4">
+    <inertial>
+      <origin
+        xyz="-0.0497134368142956 0.00895534842085108 -0.0298574943306804"
+        rpy="0 0 0" />
+      <mass
+        value="0.0360983706758384" />
+      <inertia
+        ixx="6.29746195864372E-06"
+        ixy="-1.26676470520662E-10"
+        ixz="2.56226396942615E-22"
+        iyy="1.22959077376187E-05"
+        iyz="4.14675524388666E-21"
+        izz="7.93042079351711E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体123456/meshes/q4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体123456/meshes/q4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="0"
+    type="fixed">
+    <origin
+      xyz="-0.019792 0.042 0.0072325"
+      rpy="0 0 3.1416" />
+    <parent
+      link="link44" />
+    <child
+      link="q4" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

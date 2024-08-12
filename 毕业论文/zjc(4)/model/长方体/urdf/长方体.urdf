@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="长方体">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0762635008817963 0.0888828205536596 0.0868678507653181"
+        rpy="0 0 0" />
+      <mass
+        value="0.49" />
+      <inertia
+        ixx="0.000608416666666667"
+        ixy="-1.4354836763708E-20"
+        ixz="-3.65128572631564E-20"
+        iyy="0.000400166666666667"
+        iyz="-4.82417483899325E-36"
+        izz="0.000608416666666667" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://长方体/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="cuboid">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://长方体/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

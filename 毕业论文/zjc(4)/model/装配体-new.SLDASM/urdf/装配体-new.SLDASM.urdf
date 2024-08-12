@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="装配体-new.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.147142907502603 0.125192776830468 0.0524935147885534"
+        rpy="0 0 0" />
+      <mass
+        value="2.0227814568609" />
+      <inertia
+        ixx="0.00342301359659103"
+        ixy="8.08139916015539E-20"
+        ixz="-7.14835969235874E-19"
+        iyy="0.0084218230550632"
+        iyz="-1.00707691199069E-19"
+        izz="0.00834408658796838" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体-new.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="base">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体-new.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="-0.044764 0.013522 -0.029852"
+        rpy="0 0 0" />
+      <mass
+        value="0.058854" />
+      <inertia
+        ixx="1.8183E-05"
+        ixy="9.623E-07"
+        ixz="6.4974E-08"
+        iyy="2.826E-05"
+        iyz="1.3513E-08"
+        izz="2.1876E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体-new.SLDASM/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="joint_1_blue">
+        <color
+          rgba="0.11 0.11 0.32 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体-new.SLDASM/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0.14714 -0.15958 0.097186"
+      rpy="-3.1416 0 1.6521" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="-0.044763 0.013475 -0.029602"
+        rpy="0 0 0" />
+      <mass
+        value="0.058854" />
+      <inertia
+        ixx="1.8184E-05"
+        ixy="9.5018E-07"
+        ixz="6.4974E-08"
+        iyy="2.826E-05"
+        iyz="1.3513E-08"
+        izz="2.1876E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体-new.SLDASM/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="joint_2_green">
+        <color
+          rgba="0.16 0.38 0.31 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体-new.SLDASM/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="-0.085 0 0"
+      rpy="0 0 0.049371" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="-0.044764 0.013522 -0.029352"
+        rpy="0 0 0" />
+      <mass
+        value="0.058854" />
+      <inertia
+        ixx="1.8183E-05"
+        ixy="9.623E-07"
+        ixz="6.4974E-08"
+        iyy="2.826E-05"
+        iyz="1.3513E-08"
+        izz="2.1876E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体-new.SLDASM/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="joint_3_brown">
+        <color
+          rgba="0.82 0.62 0.43 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体-new.SLDASM/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="-0.084994 -0.0005728 0"
+      rpy="0 0 -0.13526" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="-0.040405 0.015448 -0.027617"
+        rpy="0 0 0" />
+      <mass
+        value="0.051514" />
+      <inertia
+        ixx="1.6973E-05"
+        ixy="9.623E-07"
+        ixz="6.4974E-08"
+        iyy="2.6458E-05"
+        iyz="1.3513E-08"
+        izz="2.1264E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体-new.SLDASM/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="joint_4_yellow">
+        <color
+          rgba="0.96 0.88 0.18 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体-new.SLDASM/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="-0.085 0 -0.0015"
+      rpy="0 0 0.16515" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+</robot>
